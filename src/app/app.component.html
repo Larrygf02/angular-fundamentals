@@ -3,7 +3,9 @@
 </h1>
 <div class="container">
   <button class="btn btn-warning" (click)="show=!show">Accion</button>
-  <p class="text-info" *ngIf="show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, inventore culpa blanditiis neque saepe repellat consectetur ipsa pariatur ea quae tempore veritatis quia optio perspiciatis accusamus alias voluptatibus, sunt nulla?</p>
-  <p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, inventore culpa blanditiis neque saepe repellat consectetur ipsa pariatur ea quae tempore veritatis quia optio perspiciatis accusamus alias voluptatibus, sunt nulla?</p>
+  <p class="text-info" *ngIf="show; else showDos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, inventore culpa blanditiis neque saepe repellat consectetur ipsa pariatur ea quae tempore veritatis quia optio perspiciatis accusamus alias voluptatibus, sunt nulla?</p>
+  <ng-template #showDos>
+    <p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, inventore culpa blanditiis neque saepe repellat consectetur ipsa pariatur ea quae tempore veritatis quia optio perspiciatis accusamus alias voluptatibus, sunt nulla?</p>
+  </ng-template>
 </div>
 
