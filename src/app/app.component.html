@@ -5,7 +5,9 @@
   <button class="btn btn-warning" (click)="show=!show">Accion</button>
   <p class="text-info" *ngIf="show; else showDos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, inventore culpa blanditiis neque saepe repellat consectetur ipsa pariatur ea quae tempore veritatis quia optio perspiciatis accusamus alias voluptatibus, sunt nulla?</p>
   <ng-template #showDos>
-    <p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, inventore culpa blanditiis neque saepe repellat consectetur ipsa pariatur ea quae tempore veritatis quia optio perspiciatis accusamus alias voluptatibus, sunt nulla?</p>
+    <p class="text-danger" [ngClass]="'bg-dark'">Hola ng class</p>
   </ng-template>
+  <button class="btn btn-primary" (click)="mostrar='d-block'">Mostrar</button>
+  <p class="text-info d-none" [ngClass]="mostrar">Este parrafo se mostrara al hacer click en mostrar</p>
 </div>
 
