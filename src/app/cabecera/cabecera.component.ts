@@ -11,5 +11,9 @@ export class CabeceraComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  cursos:string[] = ['Css','HTML','Angular','Docker']
+  personas:Array<any> = [
+    {genero:'Masculino',nombre:'Raul', edad:'25'},
+    {genero:'Femenino',nombre:'Kelly', edad:'25'},
+  ]
 }
