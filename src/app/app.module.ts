@@ -2,6 +2,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//Servicios
+import { EquipoService } from './equipo.service'
+
+//Componentes
 import { AppComponent } from './app.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { FooterComponent } from './footer/footer.component';
@@ -31,7 +35,7 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [EquipoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
