@@ -1,4 +1,4 @@
-<h1 class="container bg-dark text-white text-center my-4 py-4">
+<!--<h1 class="container bg-dark text-white text-center my-4 py-4">
   ngIf
 </h1>
 <div class="container">
@@ -9,6 +9,12 @@
   </ng-template>
   <button class="btn btn-primary" (click)="mostrar='d-block'">Mostrar</button>
   <p class="text-info d-none" [ngClass]="mostrar">Este parrafo se mostrara al hacer click en mostrar</p>
-  <app-cabecera></app-cabecera>
+</div>-->
+<div class="container">
+  <app-encabezado></app-encabezado>
+
+  <router-outlet></router-outlet>
+  
+  <app-footer></app-footer>
 </div>
 
